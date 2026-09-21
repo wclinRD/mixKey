@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* MixedScriptTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010; };
+		A10000000000000000000002 /* LatinPassthroughLM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011; };
+		A10000000000000000000003 /* LanguageModelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012; };
+		A10000000000000000000004 /* KeyHandler+MixedScript.mm in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013; };
+		A10000000000000000000005 /* LatinCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000010 /* MixedScriptTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MixedScriptTracker.cpp; sourceTree = "<group>"; };
+		A10000000000000000000011 /* LatinPassthroughLM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LatinPassthroughLM.cpp; sourceTree = "<group>"; };
+		A10000000000000000000012 /* LanguageModelManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LanguageModelManager.cpp; sourceTree = "<group>"; };
+		A10000000000000000000013 /* KeyHandler+MixedScript.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "KeyHandler+MixedScript.mm"; sourceTree = "<group>"; };
+		A10000000000000000000014 /* LatinCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatinCompletionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000006 /* KeyMan */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000007 /* Sources */,
+				A10000000000000000000008 /* Tests */,
+			);
+			path = KeyMan;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000007 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000009 /* ChiaKeyCore */,
+				A10000000000000000000015 /* ChiaKeyInputMethod */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000009 /* ChiaKeyCore */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000016 /* Engine */,
+				A10000000000000000000012 /* LanguageModelManager.cpp */,
+			);
+			path = ChiaKeyCore;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000016 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000010 /* MixedScriptTracker.cpp */,
+				A10000000000000000000011 /* LatinPassthroughLM.cpp */,
+			);
+			path = Engine/MixedScript;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000015 /* ChiaKeyInputMethod */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000013 /* KeyHandler+MixedScript.mm */,
+				A10000000000000000000014 /* LatinCompletionView.swift */,
+			);
+			path = ChiaKeyInputMethod/ModulePackages/MixedScriptIME;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000017 /* KeyManCore */ = {
+			isa = PBXNativeTarget;
+			buildPhases = (
+				A10000000000000000000018 /* Sources */,
+			);
+			buildRules = ( );
+			dependencies = ( );
+			name = KeyManCore;
+			productRefGroup = A10000000000000000000019 /* Products */;
+			productName = KeyManCore;
+			productType = "com.apple.product-type.library";
+		};
+		A10000000000000000000018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* MixedScriptTracker.cpp in Sources */,
+				A10000000000000000000002 /* LatinPassthroughLM.cpp in Sources */,
+				A10000000000000000000003 /* LanguageModelManager.cpp in Sources */,
+				A10000000000000000000004 /* KeyHandler+MixedScript.mm in Sources */,
+				A10000000000000000000005 /* LatinCompletionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000019 /* Products */ = {
+			isa = PBXGroup;
+			children = ( );
+			path = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = A10000000000000000000021 /* Build configuration list for PBXProject "KeyMan" */;
+			compatibilityVersion = "Xcode 15.0";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				zh-Hant,
+			);
+			mainGroup = A10000000000000000000006;
+			productRefGroup = A10000000000000000000019;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000017,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = c++17;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = c++17;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000021 /* Build configuration list for PBXProject "KeyMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000022,
+				A10000000000000000000023,
+			);
+			name = "Build configuration list for PBXProject \"KeyMan\"";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000020;
+}
